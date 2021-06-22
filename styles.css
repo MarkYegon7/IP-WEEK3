@@ -1,0 +1,162 @@
+body{
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width:100%;
+    height: 100%;
+}
+#welcome{
+    height:1071px;
+    weight:1920;
+    background-image:url("images3/background/h_img.jpg");
+    background-size: cover;
+    text-align: center;
+    justify-content: baseline;
+
+}
+.delani{
+    padding-top:em(70);
+    text-align: center;
+}
+#about{
+    text-align: center;
+}
+#services{
+    width: 1920px;
+    height: 488px;
+    background-image: url("images3/background/s_image.jpg");
+    background-size: cover;
+    text-align: center;
+    color:#ffff;
+}
+.what{
+    
+    background-size: cover;
+}
+.what p {
+    display:inline-block;
+    flex-direction:row;
+    justify-content: centre;
+    margin: 130px 130px 130px;
+}
+.portfolio button{
+  width: 10%;
+  height: 1000%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+  @include button(#000,
+  "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+  2300%,
+  100%,
+  none,
+  #fff);
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+
+  &:hover {
+   -webkit-animation: ani 0.7s steps(22) forwards;
+   animation: ani 0.7s steps(22) forwards;
+  }
+ }
+}
+
+}
+
+
+.portfolio h2:hover{
+  color: #ffffff;
+  background-color:midnightblue;
+  
+
+}
+
+
+
+.background{
+    background-image: url(images3/background/c_image.jpg);
+    width: 1920px;
+    height: 683px;
+    color: #ffffff;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+  }
+  Copy to Clipboard
+  

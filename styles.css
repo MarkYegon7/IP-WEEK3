@@ -1,3 +1,11 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
 body{
     height: 100px;
     margin: 0px;
@@ -9,11 +17,12 @@ body{
 }
 #welcome{
     height:1071px;
-    weight:1920;
+    width:1920;
     background-image:url("images3/background/h_img.jpg");
     background-size: cover;
     text-align: center;
     justify-content: baseline;
+    bottom: 10px;
 
 }
 .delani{
@@ -31,67 +40,38 @@ body{
     text-align: center;
     color:#ffff;
 }
-.what{
-    
-    background-size: cover;
-}
+
 .what p {
     display:inline-block;
     flex-direction:row;
     justify-content: centre;
     margin: 130px 130px 130px;
 }
-.portfolio button{
-  width: 10%;
-  height: 1000%;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  letter-spacing: 1px;
-  font-weight: bold;
 
-  @include button(#000,
-  "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
-  2300%,
-  100%,
-  none,
-  #fff);
-  cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(22) forwards;
-  animation: ani2 0.7s steps(22) forwards;
 
-  &:hover {
-   -webkit-animation: ani 0.7s steps(22) forwards;
-   animation: ani 0.7s steps(22) forwards;
-  }
- }
+.portfolio button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
 }
 
+.portfolio button:hover {
+  background-color: #ffff;
+  color:white;
 }
-
-
-.portfolio h2:hover{
-  color: #ffffff;
-  background-color:midnightblue;
-  
-
-}
-
-
 
 .background{
     background-image: url(images3/background/c_image.jpg);
     width: 1920px;
     height: 683px;
-    color: #ffffff;
+    color:#ffff;
     margin-bottom: 2em;
 }
-
-
-
-
-
-
 
 form {
     /* Center the form on the page */
@@ -160,3 +140,44 @@ form {
   }
   Copy to Clipboard
   
+
+
+
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
